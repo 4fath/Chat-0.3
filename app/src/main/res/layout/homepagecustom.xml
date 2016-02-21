@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/switch_thumb_disabled_material_light"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameHP"
+        android:text="usernameHP"
+        android:drawableLeft="@drawable/status_online"
+        android:textColor="#123456"
+        android:textSize="@dimen/txt_18sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusHP"
+        android:text="comment"
+        android:textColor="#265987"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:maxLength="50"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+
+</LinearLayout>

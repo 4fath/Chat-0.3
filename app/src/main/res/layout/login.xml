@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#123456"
+    tools:context="com.senturk.fatih.chat03.Login"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pad_20dp"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_messaging"
+            android:layout_marginBottom="@dimen/pad_20dp" />
+
+        <EditText
+            android:id="@+id/userlogin"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+
+            android:drawableLeft="@drawable/username"
+            android:hint="@string/username" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwdlogin"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:drawableLeft="@drawable/lock"
+            android:hint="@string/password"
+            android:inputType="textPassword" >
+        </EditText>
+
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/btn_white_large"
+                android:layout_width="134dp"
+                android:layout_height="56dp"
+                android:text="@string/log_in"
+                android:textColor="#123456"/>
+
+            <Button
+                android:textColor="#123456"
+                android:id="@+id/btnReg"
+                style="@style/btn_white_large"
+                android:layout_width="134dp"
+                android:layout_height="56dp"
+                android:text="@string/register"
+                android:layout_marginLeft="@dimen/pad_10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <Button
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:text="Şifremi unuttum !"
+            android:textColor="#ff2b35b8"
+            android:background="#6478df67"
+            android:id="@+id/SifremiUnuttum"
+            style="@style/btn_white_large"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
